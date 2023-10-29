@@ -1,6 +1,6 @@
 import React from 'react'
-import {configureStore} from 'redux'
-import {itemsReducer} from './ItemSlice'
+import {configureStore} from '@reduxjs/toolkit'
+import itemsReducer from './ItemSlice'
 
 
 const Store = configureStore({
