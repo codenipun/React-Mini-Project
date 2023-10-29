@@ -1,11 +1,12 @@
 import React from 'react'
 import ItemForm from './Components/ItemForm'
 import ItemList from './Components/ItemList'
+import './index.css'
 
 const App = () => {
   return (
-    <div>
-      <h1>Items List</h1>
+    <div className='main-container'>
+      <h1>CREATE YOUR LIST !!</h1>
       <ItemForm/>
       <ItemList/>
     </div>

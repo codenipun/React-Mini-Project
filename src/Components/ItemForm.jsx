@@ -24,20 +24,22 @@ const ItemForm = () => {
         }
     }
     return (
-        <div>
+        <div className='itemsForm'>
             <input 
+                className='form-input'
                 type='text' 
                 value={name} 
                 onChange={(e)=>setName(e.target.value)} 
                 placeholder='Name'
             />
             <input 
+                className='form-input'
                 type='text' 
                 value={description} 
                 onChange={(e)=>setDescription(e.target.value)} 
                 placeholder='Description'
             />
-            <button onClick={handleSubmit}>ADD</button>
+            <button className='form-Add-btn' onClick={handleSubmit}>ADD</button>
         </div>
 
     )
