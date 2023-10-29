@@ -10,8 +10,9 @@
   width: 100%;
   background-color: rgb(226, 226, 226);
   align-items: center;
-  height: 100vh;
+  min-height: 90vh;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 
@@ -135,6 +136,12 @@
 
 .edit-input:focus{
   outline:none;
+}
+.footer{
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(56, 54, 54);
+  color: white;
 }
 
 /* <-------------------------Media Query for Mobile Layout------------------------------> */
