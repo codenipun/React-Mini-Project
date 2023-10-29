@@ -9,7 +9,7 @@ const ItemForm = () => {
     const [description, setDescription] = useState('');
 
     
-    const handleSubmit= ()=>{
+    const handleSubmit = ()=>{
         if(name && description){
             dispatch(addItems({
                 id : nanoid(),
@@ -28,16 +28,16 @@ const ItemForm = () => {
             <input 
                 type='text' 
                 value={name} 
-                onChange={(e)=>setName(e.target.name)} 
+                onChange={(e)=>setName(e.target.value)} 
                 placeholder='Name'
             />
             <input 
                 type='text' 
                 value={description} 
-                onChange={(e)=>setName(e.target.description)} 
+                onChange={(e)=>setDescription(e.target.value)} 
                 placeholder='Description'
             />
-            <button type='button' onChange={handleSubmit}>ADD</button>
+            <button onClick={handleSubmit}>ADD</button>
         </div>
 
     )
