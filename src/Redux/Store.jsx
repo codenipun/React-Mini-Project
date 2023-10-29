@@ -1,5 +1,6 @@
 import React from 'react'
 import {configureStore} from 'redux'
+import {itemsReducer} from './ItemSlice'
 
 
 const Store = configureStore({
@@ -8,4 +9,4 @@ const Store = configureStore({
     }
 })
 
-export default Store
+export default Store;
